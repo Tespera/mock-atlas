@@ -24,7 +24,8 @@ export function mountHistory(onPick: (record: AddressRecord) => void): { open():
   const render = () => {
     const items = getHistory();
     $('.drawer-head h2', root).innerHTML = `${esc(t('history'))} <span class="mono">${items.length}</span>`;
-    root.querySelectorAll<HTMLButtonElement>('[data-tool]').forEach((b) => (b.disabled = !items.length));
+    // 历史为空时只禁用导出 / 清空；关闭按钮（也带 data-tool）必须始终可用
+    root.querySelectorAll<HTMLButtonElement>('.tool-btn').forEach((b) => (b.disabled = !items.length));
     const clearBtn = $('[data-tool="clear"]', root);
     clearBtn.classList.remove('armed');
     $('span', clearBtn).textContent = t('clearAll');
