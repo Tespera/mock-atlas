@@ -18,7 +18,6 @@ function cardArt(r: AddressRecord): string {
   const c = r.card!;
   return `
   <div class="cc" data-brand="${esc(c.brand.toLowerCase().replace(/\s+/g, ''))}">
-    <span class="cc-test">${esc(t('testOnly'))}</span>
     <div class="cc-top"><span class="cc-chip"></span><span class="cc-brand">${esc(c.brand)}</span></div>
     <div class="cc-num mono" data-copy="${esc(c.raw)}" role="button" tabindex="0">${esc(c.number)}</div>
     <div class="cc-bot">
@@ -55,7 +54,10 @@ export function renderLabel(r: AddressRecord): string {
       <div class="address-block" data-copy="${esc(r.fullAddress)}" role="button" tabindex="0" title="${esc(t('fullAddress'))}">
         <p class="street">${esc(r.street)}</p>
         <p class="locality">${esc(localityLine)}${localityLine ? ' ' : ''}<span class="mono" data-scramble>${esc(r.postcode)}</span></p>
-        <p class="nation mono">${esc(countryName)}</p>
+        <div class="addr-foot">
+          <p class="nation mono">${esc(countryName)}</p>
+          ${def.realAddresses ? `<a class="map-link" href="${esc(mapUrl(r))}" target="_blank" rel="noopener noreferrer">${icons.map}${esc(t('map'))}</a>` : ''}
+        </div>
         <span class="field-copy">${icons.copy}</span>
       </div>
 
@@ -78,7 +80,6 @@ export function renderLabel(r: AddressRecord): string {
         ${barcode(r.id)}
         <div class="foot-meta">
           <span class="mono">${esc(r.country)}-${esc(r.postcode || '000000')}</span>
-          ${def.realAddresses ? `<a class="map-link" href="${esc(mapUrl(r))}" target="_blank" rel="noopener noreferrer">${icons.map}${esc(t('map'))}</a>` : ''}
         </div>
       </footer>
     </div>

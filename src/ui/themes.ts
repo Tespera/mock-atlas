@@ -20,4 +20,7 @@ export const THEMES: ThemeDef[] = [
 
 export const DEFAULT_THEME: ThemeId = 'postal';
 
+/** 风格切换菜单默认隐藏，固定使用默认风格；在网址后加 ?styles 可重新打开（开发 / 测试用） */
+export const STYLE_MENU_ENABLED = new URLSearchParams(location.search).has('styles');
+
 export const themeOf = (id: string): ThemeDef => THEMES.find((t) => t.id === id) ?? THEMES.find((t) => t.id === DEFAULT_THEME)!;

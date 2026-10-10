@@ -265,3 +265,13 @@ html, body { overscroll-behavior: none; }
 .skel i { display: block; border-radius: 14px; background: linear-gradient(90deg, var(--hover), var(--hover-strong), var(--hover)); background-size: 200% 100%; animation: shimmer 1.2s linear infinite; }
 .skel .a { height: 64px; width: 58%; } .skel .b { height: 110px; } .skel .c { height: 18px; width: 36%; }
 .skel div { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; } .skel div i { height: 56px; }
+
+/* 窄屏：底部操作栏三个按钮必须同排，不换行 */
+html[data-compact] .actions-bar { flex-wrap: nowrap; }
+html[data-compact] .actions-bar .btn-primary { min-width: 0; }
+html[data-compact] .actions-bar .btn-ghost { flex: none; padding: 0 14px; }
+@media (max-width: 420px) {
+  html[data-compact] .actions-bar { gap: 8px; }
+  html[data-compact] .actions-bar .btn-ghost { padding: 0 12px; }
+  html[data-compact] #btn-save span { display: none; }
+}

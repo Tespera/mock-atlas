@@ -18,11 +18,13 @@ import { flag } from './ui/flags';
 import { icons } from './ui/icons';
 import { scrambleIn } from './ui/labelCard';
 import { renderResult, renderSkeleton } from './ui/result';
-import { THEMES, themeOf } from './ui/themes';
+import { STYLE_MENU_ENABLED, THEMES, DEFAULT_THEME, themeOf } from './ui/themes';
 import { getHistory, isSaved, onHistoryChange, saveSettings, selectionOf, settings, toggleSaved } from './ui/state';
 import { toast } from './ui/toast';
 
 setLang(settings.lang);
+// 菜单隐藏时固定使用默认风格，忽略浏览器里以前存过的风格
+if (!STYLE_MENU_ENABLED) settings.theme = DEFAULT_THEME;
 document.documentElement.dataset.theme = settings.theme;
 
 /* ---------- 骨架 ---------- */
@@ -33,7 +35,7 @@ $('#app').innerHTML = `
   <header class="topbar">
     <div class="brand"><span class="brand-mark">Mock<i>Atlas</i></span><span class="brand-sub" data-i18n="tagline"></span></div>
     <div class="top-actions">
-      <div class="style-menu">
+      <div class="style-menu" ${STYLE_MENU_ENABLED ? '' : 'hidden'}>
         <button class="chip-btn" id="style-btn" type="button" aria-haspopup="menu" aria-expanded="false"><i class="sw"></i><span id="style-name"></span>${icons.chevron}</button>
         <div class="style-pop" id="style-pop" role="menu" hidden></div>
       </div>
@@ -143,6 +145,7 @@ function renderSaveButton() {
   const saved = !!current && isSaved(current.id);
   const btn = $('#btn-save');
   btn.setAttribute('aria-pressed', String(saved));
+  btn.setAttribute('aria-label', saved ? t('saved') : t('save'));
   btn.innerHTML = `${saved ? icons.bookmarkFill : icons.bookmark}<span>${esc(saved ? t('saved') : t('save'))}</span>`;
   const count = getHistory().length;
   const badge = $('#hist-count');
@@ -332,6 +335,8 @@ async function copyField(el: HTMLElement) {
 
 document.addEventListener('click', (e) => {
   const target = e.target as HTMLElement;
+  // 链接（地图核对等）交给浏览器处理，不触发复制
+  if (target.closest('a[href]')) return;
   const country = target.closest<HTMLElement>('.country');
   if (country) return void switchCountry(country.dataset.code as CountryCode);
 
