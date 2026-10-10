@@ -1,0 +1,93 @@
+/* 主题：postal 为默认（无属性），obsidian / swiss 通过 <html data-theme> 切换。 */
+
+/* ================= Swiss · 国际主义浅色 ================= */
+html[data-theme='swiss'] {
+  color-scheme: light;
+  --ink-0: #e6e3da; --ink-1: #f1efe8; --ink-2: #ffffff; --ink-3: #e9e6dd; --ink-4: #d8d4c8;
+  --line: rgba(12, 12, 12, 0.12); --line-strong: rgba(12, 12, 12, 0.32);
+  --text: #0c0c0c; --mute: #55534c; --faint: #8d8a80;
+  --stamp: #ff4a00; --on-accent: #ffffff;
+  --gold: #b97800;
+  --paper: #ffffff; --paper-2: #f5f3ec; --paper-ink: #0c0c0c; --paper-mute: #6a675e; --paper-line: rgba(12, 12, 12, 0.14);
+  --sel-bg: #0c0c0c; --sel-fg: #f1efe8; --sel-mute: #a9a69b;
+  --hover: rgba(12, 12, 12, 0.05); --hover-strong: rgba(12, 12, 12, 0.08);
+  --font-display: 'Bricolage Grotesque Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-ui: 'Hanken Grotesk Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --label-radius: 4px;
+  --label-shadow: 0 1px 0 rgba(12, 12, 12, 0.9), 8px 8px 0 0 var(--ink-4);
+}
+html[data-theme='swiss'] body { background: var(--ink-1); }
+html[data-theme='swiss'] .backdrop::before {
+  background:
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(12, 12, 12, 0.055) 79px 80px),
+    repeating-linear-gradient(90deg, transparent 0 79px, rgba(12, 12, 12, 0.055) 79px 80px);
+}
+html[data-theme='swiss'] .backdrop::after { display: none; }
+html[data-theme='swiss'] .brand-mark { font-weight: 800; letter-spacing: -0.05em; font-size: 30px; }
+html[data-theme='swiss'] .brand-mark i { font-style: normal; }
+html[data-theme='swiss'] .country[aria-current='true'] { transform: none; box-shadow: none; border-radius: 4px; }
+html[data-theme='swiss'] .country, html[data-theme='swiss'] .tile, html[data-theme='swiss'] .search, html[data-theme='swiss'] .combo input, html[data-theme='swiss'] .region-open { border-radius: 4px; }
+html[data-theme='swiss'] .tile { background: var(--ink-2); }
+html[data-theme='swiss'] .tile:hover { background: var(--ink-2); border-color: var(--text); }
+html[data-theme='swiss'] .tile[aria-pressed='true'] { transform: none; box-shadow: 4px 4px 0 0 var(--stamp); }
+html[data-theme='swiss'] .tile[data-badge='taxfree'] { background: color-mix(in srgb, var(--gold) 10%, var(--ink-2)); }
+html[data-theme='swiss'] .tile[data-badge='taxfree'][aria-pressed='true'] { background: var(--sel-bg); color: var(--sel-fg); border-color: var(--sel-bg); }
+html[data-theme='swiss'] .tile[data-badge='taxfree'][aria-pressed='true'] .hint { color: var(--sel-mute); }
+html[data-theme='swiss'] .tile[data-badge='taxfree'][aria-pressed='true'] .tag { color: #ffc24a; }
+html[data-theme='swiss'] .tile[data-badge='taxfree'][aria-pressed='true'] .tag::before { background: #ffc24a; box-shadow: none; }
+html[data-theme='swiss'] .btn-primary { border-radius: 4px; box-shadow: 5px 5px 0 0 var(--text); }
+html[data-theme='swiss'] .btn-primary:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 0 var(--text); }
+html[data-theme='swiss'] .btn-primary:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 0 var(--text); }
+html[data-theme='swiss'] .btn-ghost, html[data-theme='swiss'] .chip-btn { border-radius: 4px; }
+html[data-theme='swiss'] .btn-ghost { border-color: var(--text); }
+html[data-theme='swiss'] .atlas-title h2 { font-weight: 800; letter-spacing: -0.04em; font-size: 26px; }
+html[data-theme='swiss'] .recipient { font-weight: 800; letter-spacing: -0.055em; font-size: clamp(38px, 5.6vw, 68px); line-height: 0.95; }
+html[data-theme='swiss'] .drawer-panel { background: var(--ink-1); }
+html[data-theme='swiss'] .hist-item, html[data-theme='swiss'] .tool-btn { border-radius: 4px; }
+html[data-theme='swiss'] #toast { border-radius: 4px; }
+
+/* ================= Swiss：标签卡片改为平面卡 ================= */
+html[data-theme='swiss'] .label {
+  background: var(--paper); border: 1px solid var(--line-strong); border-radius: var(--label-radius); box-shadow: var(--label-shadow);
+  -webkit-mask: none; mask: none; filter: none; transform: none;
+}
+html[data-theme='swiss'] .label::after { display: none; }
+html[data-theme='swiss'] .label:hover { transform: none; }
+html[data-theme='swiss'] .label.printing { animation: rise 0.7s var(--ease) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(22px); filter: blur(6px); } }
+html[data-theme='swiss'] .label-band {
+  background: none; color: var(--paper-mute); border-radius: 0; border-bottom: 1px solid var(--paper-line); padding: 14px 30px; letter-spacing: 0.18em;
+}
+html[data-theme='swiss'] .label-band::before { display: none; }
+html[data-theme='swiss'] .label-band .mono { color: var(--paper-ink); }
+html[data-theme='swiss'] .label-body { padding: 30px; gap: 24px; }
+html[data-theme='swiss'] .marks,
+html[data-theme='swiss'] .barcode { display: none; }
+html[data-theme='swiss'] .address-block { border-style: solid; border-width: 1px; background: var(--paper-2); }
+html[data-theme='swiss'] .address-block:hover { background: var(--paper-2); border-color: var(--stamp); transform: none; }
+html[data-theme='swiss'] .field:hover { background: none; padding-left: 0; }
+html[data-theme='swiss'] .field:hover dd { color: var(--stamp); }
+html[data-theme='swiss'] .field:hover dd { color: var(--stamp); }
+html[data-theme='swiss'] .sect { border-top: 1px solid var(--paper-line); }
+html[data-theme='swiss'] .sect h3 { font-style: normal; font-weight: 650; font-size: 16px; letter-spacing: -0.01em; }
+html[data-theme='swiss'] .label-foot { border-top: 1px solid var(--paper-line); padding-top: 16px; }
+html[data-theme='swiss'] .map-link:hover { background: var(--text); color: var(--ink-1); border-color: var(--text); }
+html[data-theme='swiss'] .cc { border: 1px solid var(--line-strong); }
+html[data-theme='swiss'] .cc { box-shadow: 6px 6px 0 0 var(--ink-4); }
+html[data-theme='swiss'] .address-block { border-color: var(--text); background: var(--paper); border-radius: 2px; box-shadow: 4px 4px 0 0 var(--stamp); }
+html[data-theme='swiss'] .address-block:hover { border-color: var(--text); }
+html[data-theme='swiss'] .label-band { border-bottom: 4px solid var(--text); color: var(--text); }
+
+html[data-theme='swiss'] .foot-meta { flex-direction: row; width: 100%; justify-content: space-between; align-items: center; }
+
+/* 免税标识：极简主题用徽章代替金色印章 */
+.tf-pill { display: none; }
+html[data-theme='swiss'] .tf-pill {
+  display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; padding: 3px 10px 3px 8px; border-radius: 999px;
+  font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--gold); background: color-mix(in srgb, var(--gold) 14%, transparent); border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+  vertical-align: 1px;
+}
+html[data-theme='swiss'] .tf-pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+html[data-theme='swiss'] .tf-pill { border-radius: 2px; }
+

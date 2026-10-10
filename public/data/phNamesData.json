@@ -1,0 +1,49 @@
+{
+  "country": "PH",
+  "version": "1.0.0",
+  "firstNames": {
+    "male": [
+      "Jose", "Juan", "Miguel", "Angelo", "Mark", "John", "Paolo", "Carlo",
+      "Rafael", "Gabriel", "Antonio", "Ramon", "Ricardo", "Roberto", "Eduardo",
+      "Fernando", "Emilio", "Andres", "Diego", "Jayson", "Michael", "Christian",
+      "Joshua", "Daniel", "Kevin", "Ryan", "Jerome", "Dennis", "Arnel", "Rolando",
+      "Danilo", "Alfredo", "Renato", "Noel", "Edgar", "Jonathan", "Marlon", "Allan"
+    ],
+    "female": [
+      "Maria", "Ana", "Josefina", "Rosario", "Cristina", "Grace", "Jasmine",
+      "Angelica", "Kimberly", "Michelle", "Jenny", "Marilou", "Erlinda", "Corazon",
+      "Teresita", "Lourdes", "Melanie", "Sheila", "Divina", "Catherine", "Jennifer",
+      "Rowena", "Nerissa", "Emilia", "Lorna", "Marissa", "Aileen", "Jocelyn",
+      "Maricel", "Rachel", "Karen", "Joan", "Kristine", "Rhea", "Bernadette",
+      "Imelda", "Consuelo", "Remedios", "Nicole", "Bea"
+    ]
+  },
+  "lastNames": [
+    "Santos", "Reyes", "Cruz", "Bautista", "Ocampo", "Garcia", "Mendoza",
+    "Torres", "Flores", "Gonzales", "Castillo", "Villanueva", "Fernandez",
+    "Ramos", "Aquino", "Navarro", "Mercado", "Domingo", "Castro", "Rivera",
+    "Soriano", "Tolentino", "Valdez", "Velasco", "Abad", "Agustin", "Cabrera",
+    "Cordero", "Enriquez", "Espiritu", "Estrada", "Galang", "Guevarra", "Ignacio",
+    "Jimenez", "Medina", "Padilla", "Panganiban", "Ramirez", "Salvador", "Serrano",
+    "Uy", "Tan", "Lim", "Sy", "Ong", "Chua", "Go", "Ang", "Co"
+  ],
+  "streetNames": [
+    "Rizal", "Bonifacio", "Mabini", "Del Pilar", "Luna", "Burgos", "Aguinaldo",
+    "Quezon", "Magsaysay", "Osmena", "Roxas", "Lapu-Lapu", "Legaspi", "Zamora",
+    "Gomez", "Jacinto", "Malvar", "Tandang Sora", "Katipunan", "Kalayaan",
+    "Maharlika", "Padre Faura", "Taft", "Espana", "Aurora", "Laurel", "Recto",
+    "Sampaguita", "Ilang-Ilang", "Narra", "Acacia", "Molave", "Mahogany",
+    "Dahlia", "Santan", "Gumamela", "Kamagong", "Yakal", "Balete"
+  ],
+  "streetSuffixes": ["Street", "Road", "Avenue", "Drive"],
+  "mobilePrefixes": [
+    "905", "906", "915", "916", "917", "926", "927", "935", "936", "945",
+    "955", "956", "965", "966", "975", "976", "977", "985", "995", "997"
+  ],
+  "occupations": [
+    "Software Developer", "Teacher", "Nurse", "Accountant", "Civil Engineer",
+    "Sales Associate", "Customer Service Representative", "Office Administrator",
+    "Graphic Designer", "Marketing Specialist", "Business Analyst", "Chef",
+    "Electrician", "Pharmacist", "Project Coordinator", "Store Manager"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "country": "KR",
+  "firstNames": {
+    "male": [
+      {"name":"민준","romanized":"minjun"},{"name":"서준","romanized":"seojun"},{"name":"도윤","romanized":"doyun"},{"name":"예준","romanized":"yejun"},{"name":"시우","romanized":"siwoo"},{"name":"하준","romanized":"hajun"},{"name":"주원","romanized":"juwon"},{"name":"지호","romanized":"jiho"},{"name":"지후","romanized":"jihu"},{"name":"준우","romanized":"junwoo"},{"name":"현우","romanized":"hyunwoo"},{"name":"건우","romanized":"gunwoo"},{"name":"우진","romanized":"woojin"},{"name":"선우","romanized":"sunwoo"},{"name":"유준","romanized":"yujun"},{"name":"정우","romanized":"jungwoo"}
+    ],
+    "female": [
+      {"name":"서연","romanized":"seoyeon"},{"name":"서윤","romanized":"seoyun"},{"name":"지우","romanized":"jiwoo"},{"name":"서현","romanized":"seohyun"},{"name":"민서","romanized":"minseo"},{"name":"하은","romanized":"haeun"},{"name":"하윤","romanized":"hayoon"},{"name":"윤서","romanized":"yunseo"},{"name":"지민","romanized":"jimin"},{"name":"수아","romanized":"sua"},{"name":"지아","romanized":"jia"},{"name":"채원","romanized":"chaewon"},{"name":"예은","romanized":"yeeun"},{"name":"유진","romanized":"yujin"},{"name":"다은","romanized":"daeun"},{"name":"은서","romanized":"eunseo"}
+    ]
+  },
+  "lastNames": [
+    {"name":"김","romanized":"kim","weight":22},{"name":"이","romanized":"lee","weight":15},{"name":"박","romanized":"park","weight":9},{"name":"최","romanized":"choi","weight":5},{"name":"정","romanized":"jung","weight":4},{"name":"강","romanized":"kang","weight":3},{"name":"조","romanized":"cho","weight":2},{"name":"윤","romanized":"yoon","weight":2},{"name":"장","romanized":"jang","weight":2},{"name":"임","romanized":"lim","weight":2},{"name":"한","romanized":"han","weight":2},{"name":"오","romanized":"oh","weight":2},{"name":"서","romanized":"seo","weight":1},{"name":"신","romanized":"shin","weight":1},{"name":"권","romanized":"kwon","weight":1},{"name":"황","romanized":"hwang","weight":1}
+  ],
+  "occupations": ["Software Developer","Teacher","Nurse","Accountant","Engineer","Designer","Office Administrator","Sales Associate","Chef","Project Manager"]
+}

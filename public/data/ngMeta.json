@@ -1,0 +1,460 @@
+{
+  "country": "NG",
+  "countryName": {
+    "en": "Nigeria",
+    "zh": "尼日利亚"
+  },
+  "schemaVersion": "2.0.0",
+  "generatedAt": "2026-09-16T17:21:21.0515599Z",
+  "totalA": 253,
+  "totalB": 1989,
+  "states": {
+    "AB": {
+      "name": {
+        "en": "Abia",
+        "zh": "阿比亚州"
+      },
+      "aCount": 0,
+      "bCount": 46,
+      "areaCodes": [
+        "803",
+        "806"
+      ]
+    },
+    "AD": {
+      "name": {
+        "en": "Adamawa",
+        "zh": "阿达马瓦州"
+      },
+      "aCount": 0,
+      "bCount": 48,
+      "areaCodes": [
+        "805",
+        "808"
+      ]
+    },
+    "AK": {
+      "name": {
+        "en": "Akwa Ibom",
+        "zh": "阿夸伊博姆州"
+      },
+      "aCount": 0,
+      "bCount": 37,
+      "areaCodes": [
+        "802",
+        "809"
+      ]
+    },
+    "AN": {
+      "name": {
+        "en": "Anambra",
+        "zh": "阿南布拉州"
+      },
+      "aCount": 1,
+      "bCount": 67,
+      "areaCodes": [
+        "803",
+        "813"
+      ]
+    },
+    "BA": {
+      "name": {
+        "en": "Bauchi",
+        "zh": "包奇州"
+      },
+      "aCount": 0,
+      "bCount": 47,
+      "areaCodes": [
+        "806",
+        "810"
+      ]
+    },
+    "BE": {
+      "name": {
+        "en": "Benue",
+        "zh": "贝努埃州"
+      },
+      "aCount": 0,
+      "bCount": 25,
+      "areaCodes": [
+        "805",
+        "809"
+      ]
+    },
+    "BO": {
+      "name": {
+        "en": "Borno",
+        "zh": "博尔诺州"
+      },
+      "aCount": 0,
+      "bCount": 37,
+      "areaCodes": [
+        "803",
+        "808"
+      ]
+    },
+    "BY": {
+      "name": {
+        "en": "Bayelsa",
+        "zh": "巴耶尔萨州"
+      },
+      "aCount": 0,
+      "bCount": 43,
+      "areaCodes": [
+        "803",
+        "807"
+      ]
+    },
+    "CR": {
+      "name": {
+        "en": "Cross River",
+        "zh": "克罗斯里弗州"
+      },
+      "aCount": 0,
+      "bCount": 66,
+      "areaCodes": [
+        "806",
+        "813"
+      ]
+    },
+    "DE": {
+      "name": {
+        "en": "Delta",
+        "zh": "德尔塔州"
+      },
+      "aCount": 0,
+      "bCount": 64,
+      "areaCodes": [
+        "805",
+        "811"
+      ]
+    },
+    "EB": {
+      "name": {
+        "en": "Ebonyi",
+        "zh": "埃博尼州"
+      },
+      "aCount": 0,
+      "bCount": 83,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "ED": {
+      "name": {
+        "en": "Edo",
+        "zh": "埃多州"
+      },
+      "aCount": 2,
+      "bCount": 60,
+      "areaCodes": [
+        "802",
+        "809"
+      ]
+    },
+    "EK": {
+      "name": {
+        "en": "Ekiti",
+        "zh": "埃基蒂州"
+      },
+      "aCount": 0,
+      "bCount": 82,
+      "areaCodes": [
+        "803",
+        "810"
+      ]
+    },
+    "EN": {
+      "name": {
+        "en": "Enugu",
+        "zh": "埃努古州"
+      },
+      "aCount": 90,
+      "bCount": 0,
+      "areaCodes": [
+        "803",
+        "813"
+      ]
+    },
+    "FC": {
+      "name": {
+        "en": "FCT Abuja",
+        "zh": "联邦首都区阿布贾"
+      },
+      "aCount": 0,
+      "bCount": 21,
+      "areaCodes": [
+        "803",
+        "806",
+        "810"
+      ]
+    },
+    "GO": {
+      "name": {
+        "en": "Gombe",
+        "zh": "贡贝州"
+      },
+      "aCount": 0,
+      "bCount": 54,
+      "areaCodes": [
+        "805",
+        "809"
+      ]
+    },
+    "IM": {
+      "name": {
+        "en": "Imo",
+        "zh": "伊莫州"
+      },
+      "aCount": 1,
+      "bCount": 58,
+      "areaCodes": [
+        "803",
+        "806"
+      ]
+    },
+    "JI": {
+      "name": {
+        "en": "Jigawa",
+        "zh": "吉加瓦州"
+      },
+      "aCount": 0,
+      "bCount": 87,
+      "areaCodes": [
+        "802",
+        "807"
+      ]
+    },
+    "KD": {
+      "name": {
+        "en": "Kaduna",
+        "zh": "卡杜纳州"
+      },
+      "aCount": 90,
+      "bCount": 0,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "KE": {
+      "name": {
+        "en": "Kebbi",
+        "zh": "凯比州"
+      },
+      "aCount": 0,
+      "bCount": 56,
+      "areaCodes": [
+        "805",
+        "813"
+      ]
+    },
+    "KN": {
+      "name": {
+        "en": "Kano",
+        "zh": "卡诺州"
+      },
+      "aCount": 59,
+      "bCount": 28,
+      "areaCodes": [
+        "803",
+        "806"
+      ]
+    },
+    "KO": {
+      "name": {
+        "en": "Kogi",
+        "zh": "科吉州"
+      },
+      "aCount": 1,
+      "bCount": 57,
+      "areaCodes": [
+        "803",
+        "811"
+      ]
+    },
+    "KT": {
+      "name": {
+        "en": "Katsina",
+        "zh": "卡齐纳州"
+      },
+      "aCount": 0,
+      "bCount": 76,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "KW": {
+      "name": {
+        "en": "Kwara",
+        "zh": "夸拉州"
+      },
+      "aCount": 0,
+      "bCount": 40,
+      "areaCodes": [
+        "803",
+        "805"
+      ]
+    },
+    "LA": {
+      "name": {
+        "en": "Lagos",
+        "zh": "拉各斯州"
+      },
+      "aCount": 5,
+      "bCount": 63,
+      "areaCodes": [
+        "803",
+        "806",
+        "813"
+      ]
+    },
+    "NA": {
+      "name": {
+        "en": "Nasarawa",
+        "zh": "纳萨拉瓦州"
+      },
+      "aCount": 0,
+      "bCount": 85,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "NI": {
+      "name": {
+        "en": "Niger",
+        "zh": "尼日尔州"
+      },
+      "aCount": 0,
+      "bCount": 79,
+      "areaCodes": [
+        "803",
+        "805"
+      ]
+    },
+    "OG": {
+      "name": {
+        "en": "Ogun",
+        "zh": "奥贡州"
+      },
+      "aCount": 0,
+      "bCount": 65,
+      "areaCodes": [
+        "803",
+        "805"
+      ]
+    },
+    "ON": {
+      "name": {
+        "en": "Ondo",
+        "zh": "翁多州"
+      },
+      "aCount": 0,
+      "bCount": 66,
+      "areaCodes": [
+        "803",
+        "813"
+      ]
+    },
+    "OS": {
+      "name": {
+        "en": "Osun",
+        "zh": "奥孙州"
+      },
+      "aCount": 0,
+      "bCount": 56,
+      "areaCodes": [
+        "803",
+        "811"
+      ]
+    },
+    "OY": {
+      "name": {
+        "en": "Oyo",
+        "zh": "奥约州"
+      },
+      "aCount": 0,
+      "bCount": 77,
+      "areaCodes": [
+        "803",
+        "805",
+        "813"
+      ]
+    },
+    "PL": {
+      "name": {
+        "en": "Plateau",
+        "zh": "普拉托州"
+      },
+      "aCount": 1,
+      "bCount": 47,
+      "areaCodes": [
+        "803",
+        "808"
+      ]
+    },
+    "RI": {
+      "name": {
+        "en": "Rivers",
+        "zh": "河流州"
+      },
+      "aCount": 3,
+      "bCount": 41,
+      "areaCodes": [
+        "803",
+        "806"
+      ]
+    },
+    "SO": {
+      "name": {
+        "en": "Sokoto",
+        "zh": "索科托州"
+      },
+      "aCount": 0,
+      "bCount": 77,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "TA": {
+      "name": {
+        "en": "Taraba",
+        "zh": "塔拉巴州"
+      },
+      "aCount": 0,
+      "bCount": 63,
+      "areaCodes": [
+        "805",
+        "813"
+      ]
+    },
+    "YO": {
+      "name": {
+        "en": "Yobe",
+        "zh": "约贝州"
+      },
+      "aCount": 0,
+      "bCount": 40,
+      "areaCodes": [
+        "803",
+        "809"
+      ]
+    },
+    "ZA": {
+      "name": {
+        "en": "Zamfara",
+        "zh": "赞法拉州"
+      },
+      "aCount": 0,
+      "bCount": 48,
+      "areaCodes": [
+        "803",
+        "805"
+      ]
+    }
+  }
+}

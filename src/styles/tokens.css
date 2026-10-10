@@ -1,0 +1,45 @@
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource-variable/hanken-grotesk';
+@import '@fontsource-variable/martian-mono';
+@import '@fontsource-variable/bricolage-grotesque';
+
+:root {
+  --ink-0: #080d0b;
+  --ink-1: #0b1210;
+  --ink-2: #111b18;
+  --ink-3: #182521;
+  --ink-4: #22342e;
+  --line: rgba(233, 224, 201, 0.1);
+  --line-strong: rgba(233, 224, 201, 0.22);
+
+  --paper: #efe6d2;
+  --paper-2: #e4d9bd;
+  --paper-ink: #1b221f;
+  --paper-mute: #6d6a58;
+  --paper-line: rgba(27, 34, 31, 0.16);
+
+  --text: #ebe4d1;
+  --mute: #8d9a91;
+  --faint: #5c6b63;
+
+  --stamp: #e0482b;
+  --stamp-deep: #b8321a;
+  --gold: #e6b44f;
+  --gold-deep: #b98a26;
+  --air-blue: #3a6fb0;
+
+  --font-display: 'Fraunces Variable', 'Songti SC', 'Noto Serif SC', serif;
+  --font-ui: 'Hanken Grotesk Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'Martian Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* 语义令牌：主题通过覆盖它们换肤 */
+  --on-accent: #fff7ee;
+  --sel-bg: var(--paper);
+  --sel-fg: var(--paper-ink);
+  --sel-mute: var(--paper-mute);
+  --hover: rgba(255, 255, 255, 0.05);
+  --hover-strong: rgba(255, 255, 255, 0.08);
+  --radius: 14px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 30px 60px -20px rgba(0, 0, 0, 0.7), 0 10px 24px -8px rgba(0, 0, 0, 0.5);
+}
